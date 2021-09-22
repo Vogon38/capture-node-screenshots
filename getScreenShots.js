@@ -26,7 +26,7 @@ async function setViewports(device, url) {
     await page.type('#copy selector', 'user.name');
     await page.type('#copy selector', 'user.password');
 
-    //Click and wait for navigation
+    // Click and wait for navigation
     await Promise.all([
         await page.click('#copy selector'),
         page.waitForNavigation({ waitUntil: 'networkidle0' }),
