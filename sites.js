@@ -1,4 +1,4 @@
-const { link } = require("fs");
+const { link } = require('fs');
 
  const urls = [
         { name: 'Facebook', link: 'https://www.facebook.com' },
