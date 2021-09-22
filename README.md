@@ -13,5 +13,5 @@ Node v7.6.0 or greater
 
 `> node getScreenShots.js`
 
-# More about npm package
+# More about NPM package
 [Puppeteer](https://www.npmjs.com/package/puppeteer)
