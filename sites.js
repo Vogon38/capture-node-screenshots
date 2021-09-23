@@ -4,7 +4,8 @@ const { link } = require('fs');
         { name: 'Facebook', link: 'https://www.facebook.com' },
     ];
 
-console.table(urls);
-console.log('------------------------------------------------------------------------------------------------------')
+console.info(`\n======================================== Table ========================================\n`)
+console.table(urls)
+console.info(`\n======================================== Info =========================================`)
 
 module.exports = {urls};
