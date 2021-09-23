@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const { urls } = require('./sites.js');
 
-// Put your custom dimension and name here
+// Custom dimension and name
 const devices = [
     { name: '1920x1080', width: 1920, height: 1080 },
     { name: '1366x768', width: 1366, height: 768 },
