@@ -43,31 +43,30 @@ async function setViewports(device, url) {
 
 // Directory Create if not exist
 async function getScreenshots(device, url, page, browser) {
-   var new_location = `./Sample/ ${device.name}`;
-   fs.mkdir(new_location, function (err) {
-        if (err) { //console.log(err) 
-        }
-   });
+  var new_location = `./Sample/${device.name}`;
+  fs.mkdir(new_location, function (err) {
+    if (err) {
+      // console.log(err)
+    }
+  });
 
-    await page.screenshot({
-        path: `${new_location}/${url.name}-${Date.now()}.png`,
-        fullPage: true,
-    });
-    browser.close();
+  await page.screenshot({
+    path: `${new_location}/${url.name}-${Date.now()}.png`,
+    fullPage: true,
+  });
+  browser.close();
 }
 
 // Mapping Array
-const name = Array.from(new Set(devices.map(item => item.name)));
-const link = Array.from(new Set(urls.map(item => item.link)));
+// const name = Array.from(new Set(devices.map((item) => item.name)));
+// const link = Array.from(new Set(urls.map((item) => item.link)));
 
 async function getUrlAndResolutions(devices, urls) {
-    var cont=0;
-    for (let device of devices) {
-        for (let url of urls) {
-            await setViewports(device, url);
-            console.info(`Resolução: ${name[cont]}, Página: ${link}`);
-            cont++;
-        }
+  for (let device of devices) {
+    for (let url of urls) {
+      await setViewports(device, url);
+      console.info(`Resolução: ${device.name}, Página: ${url.link}`);
     }
+  }
 }
 getUrlAndResolutions(devices, urls);
