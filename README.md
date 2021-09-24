@@ -11,6 +11,8 @@ Node v7.6.0 or greater
 # Running
 `> cd .\ScreenShot` 
 
+`> mkdir Sample`
+
 `> node getScreenShots.js`
 
 # More about NPM package
