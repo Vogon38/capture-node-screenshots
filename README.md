@@ -15,3 +15,6 @@ Node v7.6.0 or greater
 
 # More about NPM package
 [Puppeteer](https://www.npmjs.com/package/puppeteer)
+
+# Based on
+[ayushsinghania/High-Resoultion-Full-Webpage-screenshot](https://github.com/ayushsinghania/High-Resoultion-Full-Webpage-screenshot)
