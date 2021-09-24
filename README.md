@@ -4,25 +4,25 @@ Node v7.6.0 or greater
 # Setting up
 ## Install Puppeteer:
 ~~~sh
-    $ npm i puppeteer
+npm i puppeteer
 ~~~
 
 ## Initialize NPM:
 ~~~sh
-    $ npm init
+npm init
 ~~~
 
 # Running
 ~~~sh
-    $ cd .\ScreenShot
+cd .\ScreenShot
 ~~~
     
 ~~~sh
-    $ mkdir Sample
+mkdir Sample
 ~~~
     
 ~~~sh
-    $ node getScreenShots.js
+node getScreenShots.js
 ~~~
 
 # More about NPM package
