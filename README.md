@@ -12,11 +12,8 @@ npm i puppeteer
 npm init
 ~~~
 
-# Running
-~~~sh
-cd .\ScreenShot
-~~~
-    
+## Create new folder
+
 ~~~sh
 mkdir Sample
 ~~~
