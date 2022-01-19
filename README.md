@@ -17,6 +17,8 @@ npm init
 ~~~sh
 mkdir Sample
 ~~~
+
+## Run
     
 ~~~sh
 node getScreenShots.js
